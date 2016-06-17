@@ -502,7 +502,7 @@ footer img{
 }
 .show_products_single{
     width: 235px;
-    padding:40px 0 0 30px;
+    padding:40px 0 0 35px;
 }
 
 .show_products_single img:first-child{
@@ -530,7 +530,120 @@ footer img{
 }
 /*show_products显示过滤下方的商品结束*/
 
+/*page分页开始*/
+.page{
+    text-align: center;
+    margin: 70px 0 20px 0;
+
+}
+.page a{
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    border: 1px solid #369;
+    padding: 3px 12px;
+
+}
+.page a.active{
+    background-color: #369;
+    color: #fff;
+}
+.page input[type="text"]{
+    width: 37px;
+    height: 24px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.page input[type="button"]{
+    width: 44px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+/*page分页结束*/
 /*productFilter页面结束*/
+
+
+/*product_intro页面开始*/
+/*公共主体背景色*/
+.main_bg{
+    background-color: #f0f0f0;
+}
+/*面包屑开始*/
+.breadcrumb{
+    font-size: 12px;
+}
+/*面包屑结束*/
+
+/*product_intro开始*/
+.product_intro{
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #ccc;
+
+}
+.left_pic{
+    text-align: center;
+}
+.left_pic>img{
+    margin-top: 20px;
+}
+.small_intro_pic{
+    margin: 20px;
+}
+.small_intro_pic > a{
+    display: inline-block;
+    float: left;
+    width: 54px;
+    height: 54px;
+    border:1px solid #ccc;
+}
+.small_intro_pic > a:hover{
+
+    border:1px solid #369;
+}
+
+/*right_intro图片右侧开始*/
+
+.right_intro{
+    width: 650px;
+    border-left: 1px solid #ccc;
+    padding: 25px 0 25px 20px;
+}
+.product_info{
+    overflow: hidden;
+}
+.product_info ul li{
+    float: left;
+    margin: 5px 20px;
+}
+.product_info .low_price li:last-child{
+    color: #d4105a;
+}
+.product_info .low_price li:last-child>span{
+    font-size: 25px;
+}
+.product_info ul >li> i{
+    padding-left: 55PX;
+    background: url("../images/icon/yellow_left.png") left top no-repeat;
+}
+.buy_info_detail{
+    background-color: #f2f2f2;
+}
+.buy_info_detail .product_info select{
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #369;
+}
+.product_info .btn_color input{
+    width: ;
+}
+/*right_intro图片右侧结束*/
+
+
+/*product_intro结束*/
+/*product_intro页面结束*/
 
 
 
