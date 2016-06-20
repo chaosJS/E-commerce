@@ -357,6 +357,7 @@ footer{
     font-size: 12px;
     padding: 20px 0;
     margin-top:30px;
+    clear: both;
 }
 footer img{
     margin:10px 10px;
@@ -613,6 +614,7 @@ footer img{
 }
 .product_info{
     overflow: hidden;
+    margin: 10px 0px;
 }
 .product_info ul li{
     float: left;
@@ -627,6 +629,7 @@ footer img{
 .product_info ul >li> i{
     padding-left: 55PX;
     background: url("../images/icon/yellow_left.png") left top no-repeat;
+    margin-right: 10px;
 }
 .buy_info_detail{
     background-color: #f2f2f2;
@@ -637,12 +640,171 @@ footer img{
     border: 1px solid #369;
 }
 .product_info .btn_color input{
-    width: ;
+    box-sizing: border-box;
+    width: 85px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.product_info .btn_color  .active{
+    border: 1px solid #317ee7;
+
+}
+.product_info .btn_size input{
+    box-sizing: border-box;
+    width: 75px;
+    height: 27px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.product_info .btn_size  .active{
+    border: 1px solid #317ee7;
+
+}
+
+.product_info .btn_num input[name="minus"]{
+    box-sizing: border-box;
+    width: 18px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.product_info .btn_num input[name="Num"]{
+    box-sizing: border-box;
+    width: 52px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.product_info .btn_num input[name="plus"]{
+    box-sizing: border-box;
+    width: 18px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.product_info .btn_num +span{
+     line-height: 45px;
+ }
+.product_info .btn_num +span >b{
+   color: #ff7201;
+}
+.product_info .hasChosen span {
+   color: #317ee7;
+}
+.product_info .btn_buy{
+    padding-left: 50px;
+}
+.product_info .btn_buy button{
+    box-sizing: border-box;
+    width: 180px;
+    height: 40px;
+    background-color: #fc8900;
+    margin-right: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.product_info .btn_buy button i{
+    padding-left: 30px;
+    background: url("../images/icon/cart.png")
+    left top no-repeat;
 }
 /*right_intro图片右侧结束*/
 
-
+/*同价位和看最终买开始*/
+.sub_product_intro{
+    overflow: hidden;
+    margin-top: 15px ;
+}
+.sub_product_intro .l{
+    box-sizing: border-box;
+    width: 190px;
+    border-top: 3px solid #317ee7;
+}
+.same_price{
+    border: 1px solid #ccc;
+}
+.same_price >h3{
+    border-bottom: 1px solid #ccc;
+    padding-left: 13px;
+    font-weight: bold;
+}
+.see_buy{
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.see_buy>h3{
+    border-bottom: 1px solid #ccc;
+    padding-left: 13px;
+    font-weight: bold;
+}
+.pic_intro{
+    padding: 15px 13px;
+    background-color: #fff;
+}
+.pic_intro>img{
+    display: block;
+    margin: 0 auto;
+}
+.pic_intro>a{
+    color: #d4105a;
+    font-weight: bold;
+}
+/*同价位和看最终买结束*/
 /*product_intro结束*/
+
+/*des_info_content商品介绍和商品评价开始*/
+.des_info_content {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 790px;
+    float: left;
+    margin-left: 18px;
+}
+.des_title{
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.des_info_content img[alt="ad"]{
+    display: block;
+    margin: 30px auto;
+}
+.des_title li{
+    float: left;
+    width: 50%;
+    
+}
+.des_title .active {
+    background-color: #0479ca;
+    color: #fff;
+    font-weight: bold;
+}
+.des_title .active a {
+    color: #fff;
+}
+
+.des_ad {
+    margin: 30px ;
+}
+.des_ad h3{
+    float: left;
+    border-bottom: 2px solid #0479ca;
+    margin-right: 10px;
+}
+.des_ad p{
+    margin: 20px;
+}
+.des_ad h3+p{
+    padding-top:4px;
+    border-bottom: 2px solid #ccc;
+}
+/*des_info_content商品介绍和商品评价结束*/
 /*product_intro页面结束*/
 
 
