@@ -18,6 +18,14 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 a:link,a:visited{color:#5e5e5e}a:hover{color:#c9394a}a:active{color:#666}
 .clearfix:after{content:'\0020';display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*zoom:1}
+.clearb:before{
+    display: table;
+    content: " ";
+}
+
+.clearb:after {
+    clear: both;
+}
 .l{float:left}.r{float:right}
 .clear{height:0;overflow:hidden;clear:both}
 .show{display: block}

@@ -473,7 +473,7 @@ footer img{
 .right_filter select {
     height: 30px;
     padding: 5px 10px;
-    border: 1px solid #369;
+    border: 1px solid #1d7ad9;
 }
 .right_filter ul li>a{
     color: #1d7ad9;
@@ -527,7 +527,7 @@ footer img{
 
 
 .show_products_single   a:last-child{
-    color: #369;
+    color: #1d7ad9;
 }
 /*show_products显示过滤下方的商品结束*/
 
@@ -541,12 +541,12 @@ footer img{
     height: 24px;
     display: inline-block;
     line-height: 24px;
-    border: 1px solid #369;
+    border: 1px solid #1d7ad9;
     padding: 3px 12px;
 
 }
 .page a.active{
-    background-color: #369;
+    background-color: #1d7ad9;
     color: #fff;
 }
 .page input[type="text"]{
@@ -602,7 +602,7 @@ footer img{
 }
 .small_intro_pic > a:hover{
 
-    border:1px solid #369;
+    border:1px solid #1d7ad9;
 }
 
 /*right_intro图片右侧开始*/
@@ -614,7 +614,7 @@ footer img{
 }
 .product_info{
     overflow: hidden;
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 .product_info ul li{
     float: left;
@@ -637,7 +637,7 @@ footer img{
 .buy_info_detail .product_info select{
     height: 30px;
     padding: 5px 10px;
-    border: 1px solid #369;
+    border: 1px solid #317ee7;
 }
 .product_info .btn_color input{
     box-sizing: border-box;
@@ -719,7 +719,7 @@ footer img{
     overflow: hidden;
     margin-top: 15px ;
 }
-.sub_product_intro .l{
+.sub_product_intro >.l{
     box-sizing: border-box;
     width: 190px;
     border-top: 3px solid #317ee7;
@@ -778,7 +778,7 @@ footer img{
 .des_title li{
     float: left;
     width: 50%;
-    
+
 }
 .des_title .active {
     background-color: #0479ca;
@@ -806,6 +806,182 @@ footer img{
 }
 /*des_info_content商品介绍和商品评价结束*/
 /*product_intro页面结束*/
+
+
+/*商品评价页开始*/
+/*评分进度条开始*/
+.des_title+h3{
+    margin: 10px 0 10px 10px;
+}
+.score_box{
+    margin:60px 0 0 10px;
+
+}
+.score>span{
+    display: inline-block;
+    font-size: 50px;
+    color: #ff8f00;
+
+}
+.score>em{
+    font-size: 20px;
+}
+.score_bar{
+ position: relative;
+}
+.score_bar>ul{
+    width: 450px;
+    background-color: #bdbdbd;
+    color: #fff;
+    overflow: hidden;
+}
+.score_bar>ul>li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.score_bar >span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #7f7f7f;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: -40px;
+}
+.score_bar >span>i{
+ display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid #7f7f7f;
+    margin: -3px 0 0 5px;
+}
+.score_bar p:last-child{
+   font-size: 10px;
+    margin-bottom: 60px;
+}
+
+/*评分进度条结束*/
+
+.clearb{
+    background-color: #f0f0f0;
+    position: relative;
+}
+.clearb >ul{
+    width: 450px;
+}
+.clearb>ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.clearb button{
+
+    float: right;
+    box-sizing: border-box;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    margin-top: 3px;
+
+}
+.clearb button >i{
+    padding-left: 13px;
+    background: url("../images/icon/bdown.png") left top no-repeat;
+}
+.clearb >img{
+    position: absolute;
+    top: -10px;
+    right: 1px;
+}
+.clearb >ul .active>a{
+ display: inline-block;
+    border-bottom: 3px solid #5aa1fe;
+}
+
+/*用户评论开始*/
+.comment{
+    margin: 30px 25px;
+}
+.comment .about_user{
+    text-align: center;
+    margin: 0 20px;
+}
+.comment .about_comments{
+    width: 450px;
+    margin-left: 20px;
+}
+.comment .about_comments p:first-child i{
+    display: inline-block;
+    height: 13px;
+    padding-left: 60px;
+    margin-right: 3px;
+
+    background: url("../images/icon/star.png") left top;
+}
+.comment .about_comments p:last-child a{
+ color: #088bd3;
+}
+/*用户评论结束*/
+
+/*商品咨询开始*/
+.products_ask {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 790px;
+    float: left;
+    margin-left: 18px;
+    margin-top:20px;
+}
+.products_ask .ask_title{
+    height: 38px;
+    line-height: 37px;
+    border-bottom: 1px solid #0688ba;
+
+
+}
+
+.products_ask .ask_title li{
+    float: left;
+    text-align: center;
+    width: 130px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #0688ba;
+
+
+}
+.products_ask .ask_title li:last-child{
+
+    text-align: center;
+    border: none;
+    margin-left: 132px;
+
+}
+.products_ask .ask_title  .active{
+    border: 1px solid #0688ba;
+    border-bottom: 1px solid #fff;
+}
+.products_ask .ask_title +p{
+    margin: 45px;
+    background: #f3f3f3;
+    padding-top: 25px;
+}
+.products_ask > .comment>.about_comments p{
+    margin: 0 20px 20px 20px;
+
+}
+.products_ask > .comment>.about_comments p:last-child{
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+/*商品咨询结束*/
+
+/*商品评价页结束*/
 
 
 

@@ -15,3 +15,24 @@
 		.product_info .btn_num +span{
 		line-height: 45px;
 		}
+
+5. 图片居中：
+
+		img{display:block; margin:0 auto;}
+		//仅仅是多种方法之一
+
+6. 善用width：20%；百分比宽度，在均分时很方便
+7. 看一下bootstrap是怎么清除前后浮动的
+
+		div:before{
+		    display: table;
+		    content: " ";
+		}
+
+		div:after {
+		    clear: both;
+		}
+
+		------------------------常用的清除浮动方法
+		.clearfix:after{content:'\0020';display:block;height:0;clear:both;visibility:hidden}
+		.clearfix{*zoom:1}

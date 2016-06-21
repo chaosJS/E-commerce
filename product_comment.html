@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>商品介绍</title>
+    <title>商品评价和咨询</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <style type="text/css">
@@ -312,7 +312,7 @@
                 <ul>
                     <li>选择规格</li>
                     <li class="btn_size">
-                        <input type="button" name="wifi16g" value="WIFI16G">
+                        <input type="button" name="wifi16g" value="WIFI16G" class="active">
                         <input type="button" name="wifi16g" value="WIFI16G">
                         <input type="button" name="wifi16g" value="WIFI16G">
                         <input type="button" name="wifi16g" value="WIFI16G">
@@ -431,7 +431,167 @@
 
         <!--分割复用-->
         <h3>商品评价</h3>
+        <div class="clearfix score_box mt60 ml10">
+            <div class="score l ">
+                <span>4.7</span><em>分</em>
+            </div>
+            <div class="score_bar l ml20">
+                <ul>
+                    <li>非常不满意</li>
+                    <li>不满意</li>
+                    <li>一般</li>
+                    <li>满意</li>
+                    <li>非常满意</li>
+                </ul>
+                <span>4.7 <i></i></span>
+                <p>共 <span>124213</span>位网友参与评分</p>
+            </div>
+        </div>
+        <div class="clearb clearfix">
+            <ul>
+                <li class="active"><a href="#">全部</a></li>
+                <li><a href="#">满意（17490）</a></li>
+                <li><a href="#">一般（490）</a></li>
+                <li><a href="#">不满意（40）</a></li>
+            </ul>
+            <button type="button" name="timeSort">
+                时间排序 <i></i>
+            </button>
+            <button type="button" name="timeSort">
+                推荐排序 <i></i>
+            </button>
+            <img src="images/icon/new.png" alt="new">
+        </div>
+
+        <div class="comment">
+            <div class="about_user l">
+                <img src="images/icon/user.png" alt="user">
+                <p><a href="#">6***42</a></p>
+                <p><a href="#">金色会员</a></p>
+            </div>
+            <div class="about_comments l">
+                <p><i></i><b>5分 满意</b></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi enim molestias omnis rem tenetur unde veritatis? Enim necessitatibus nemo, neque, perspiciatis quia quos ratione sint suscipit, tempore vel voluptates.</p>
+                <p>
+                    <a href="#">踩（0）</a>
+                    <a href="#">顶（0）</a>
+                </p>
+            </div>
+            <div class="about_time r">
+                <p>2010-6-2117:07:25</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="comment">
+            <div class="about_user l">
+                <img src="images/icon/user1.png" alt="user">
+                <p><a href="#">6***42</a></p>
+                <p><a href="#">金色会员</a></p>
+            </div>
+            <div class="about_comments l">
+                <p><i></i><b>5分 满意</b></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi enim molestias omnis rem tenetur unde veritatis? Enim necessitatibus nemo, neque, perspiciatis quia quos ratione sint suscipit, tempore vel voluptates.</p>
+                <p>
+                    <a href="#">踩（0）</a>
+                    <a href="#">顶（0）</a>
+                </p>
+            </div>
+            <div class="about_time r">
+                <p>2010-6-21 17:07:25</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--分页开始-->
+        <div class="page r">
+            <a href="#">上一页</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+
+            <span>……</span>
+            <a href="#">200</a>
+            <a href="#">下一页</a>
+            <span>共200页，到第</span>
+            <input type="text" value="1">页
+            <input type="button" name="" id="" value="确定">
+        </div>
+        <!--分页结束-->
     </div>
+    <!-- 商品咨询开始-->
+    <div class="products_ask">
+        <ul class="ask_title l">
+            <li class=""><a href="#">全部咨询（705）</a></li>
+            <li class="active"><a href="#">商品咨询（666）</a></li>
+            <li><a href="#">配送/支付（116）</a></li>
+            <li><a href="#">发票/保修（34）</a></li>
+            <li><a href="#">发表咨询</a></li>
+
+        </ul>
+        <p>
+            提示:因厂家更改产品包装、产地或者更换随机附件等没有任何提前通知，且每位咨询者购买情况、提问时间等不同，为此以下回复信息仅供参考！若由此给您带来不便请多多谅解，谢谢！
+        </p>
+        <div class="comment l">
+            <div class="about_user l">
+                <img src="images/icon/user2.png" alt="user">
+                <p><a href="#">6***42</a></p>
+                <p><a href="#">土星会员</a></p>
+            </div>
+            <div class="about_comments l">
+                <p><b>[商品咨询]</b></p>
+                <p>
+                    还能再便宜点吗？？
+                </p>
+                <p>
+                    <b>商家回复：</b>
+                    现在已经是活动价了
+                </p>
+            </div>
+            <div class="about_time r">
+                <p>2010-6-21 17:07:25</p>
+            </div>
+
+        </div>
+        <div class="comment l">
+            <div class="about_user l">
+                <img src="images/icon/user2.png" alt="user">
+                <p><a href="#">6***42</a></p>
+                <p><a href="#">土星会员</a></p>
+            </div>
+            <div class="about_comments l">
+                <p><b>[商品咨询]</b></p>
+                <p>
+                    还能再便宜点吗？？
+                </p>
+                <p>
+                    <b>商家回复：</b>
+                    现在已经是活动价了
+                </p>
+            </div>
+            <div class="about_time r">
+                <p>2010-6-21 17:07:25</p>
+            </div>
+
+        </div>
+
+        <!--分页开始-->
+        <div class="page r">
+            <a href="#">上一页</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+
+            <span>……</span>
+            <a href="#">200</a>
+            <a href="#">下一页</a>
+            <span>共200页，到第</span>
+            <input type="text" value="1">页
+            <input type="button" name="" id="" value="确定">
+        </div>
+        <!--分页结束-->
+    </div>
+    <!--商品咨询结束-->
 </div>
 <!--同价位和看最终买结束-->
 
