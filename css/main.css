@@ -1351,8 +1351,8 @@ footer img {
 .login {
     width: 460px;
     box-sizing: border-box;
-    border: 1px solid red;
-    margin: 20px auto;
+    border: 1px solid #ccc;
+    margin: 20px auto 80px;
 }
 
 .login div {
@@ -1365,15 +1365,60 @@ footer img {
 .login div input[type="button"] {
     width: 310px;
     height: 35px;
-    background: linear-gradient(#fff, #1d7ad9);+
-    
+    background: linear-gradient(#fff, #ccc);
+
 }
-.login div >input{
+.login div input[type="text"] ,input[type="password"]{
     width: 310px;
     height: 35px;
     border: 1px solid #ccc;
+    padding: 5px 10px;
+    background: url("../images/icon/ruser.png") right center no-repeat;
 }
+.login div input[type="password"]{
 
+    background: url("../images/icon/rpwd.png") right center no-repeat;
+}
+.login>input[type="button"]{
+    width: 115px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #7cbe56;
+    margin-right: 40px;
+    color: #fff;
+}
+.login .register{
+    width: 410px;
+    margin: 40px auto;
+}
+.login .register p >input{
+    width: 270px;
+
+}
+.login .register p {
+text-align: right;
+    margin: 25px 0;
+}
+.login .register p b{
+color: #ff0000;
+}
+.login .register p >input[type="checkbox"]{
+    width: 15px;
+
+}
+.login .register p >input[type="submit"]{
+    width: 310px;
+    height: 35px;
+    background: linear-gradient(#fff, #ccc);
+    color: #606060;
+    font-weight: bold;
+}
+.login .register p:last-of-type{
+  text-align: center;
+}
+.log_register .logo{
+    padding-left: 270px;
+}
 /*登录注册页结束*/
 
 
