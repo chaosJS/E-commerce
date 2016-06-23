@@ -36,3 +36,6 @@
 		------------------------常用的清除浮动方法
 		.clearfix:after{content:'\0020';display:block;height:0;clear:both;visibility:hidden}
 		.clearfix{*zoom:1}
+
+
+8. b:nth-of-type(3){}//特定类型的第 N 个子元素

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品订单信息</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="l">
+                <a href="#" class="collect">收藏本站</a>
+            </div>
+            <div class="r">
+                欢迎来到本站
+                <a href="#">[登录]</a>
+                <a href="#">[免费注册]</a>
+            </div>
+        </div>
+    </div>
+    <!--logo搜索框购物车开始-->
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo l">
+                <a href="#">
+                    <img src="images/icon/logo.png" alt="logo" title="mylogo">
+                    <!--出于seo和用户考虑，img必须把alt属性和title属性都加上-->
+                </a>
+            </div>
+
+            <div class="progress_bar r">
+                <b>1</b><span></span><b>2</b><span></span><b>3</b>
+
+                    <ul>
+                        <li><a href="#"><b>我的购物车</b></a></li>
+                        <li><a href="#"><b>填写核对订单</b></a></li>
+                        <li><a href="#">订单提交成功</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!--logo搜索框购物车结束-->
+
+</header>
+
+<!--收货信息开始-->
+<div class="address comWidth">
+    <div class="adress_title">
+        <h3>收货信息</h3>
+    </div>
+    <p>
+        <b>*</b>
+        选择地区：
+        <select name="deliverTo" id="deliverTo" title="deliverTo">
+            <option value="0">海淀区五环内</option>
+            <option value="1">单核</option>
+            <option value="2">双核</option>
+            <option value="3">三核</option>
+            <option value="4">四核</option>
+            <option value="8">八核</option>
+        </select>
+    </p>
+    <p>
+        <b>*</b>
+        详细地址：
+        <input type="text" placeholder="最多输入26个汉字" name="address_detail">
+    </p>
+    <p>
+        <b>*</b>
+        收货人：
+        <input type="text" placeholder="最多输入10个汉字" name="address_people">
+    </p>
+    <p>
+        <b>*</b>
+        手机：
+        <input type="text" placeholder="如：13208003623" name="address_phone">
+        或固定电话:
+        <input type="text" placeholder="区号">
+        -
+        <input type="text" placeholder="电话号码">
+        -
+        <input type="text" placeholder="分机号（可选）">
+    </p>
+    <input type="button" name="confirm_addr" value="确认收货地址">
+</div>
+<!--收货信息结束-->
+
+<!--支付方式开始-->
+<div class="address comWidth">
+    <div class="adress_title">
+        <h3>支付方式</h3>
+    </div>
+    <p>
+        <input type="radio" id="weixin">
+        <label for="weixin">微信支付</label>
+        <img src="images/icon/weixin.png" alt="">
+        用微信扫一扫就能支付！
+    </p>
+    <p>
+        <input type="radio" id="cashondelivery">
+        <label for="cashondelivery">货到付款</label>
+        送货上门后再付款，使用现金或刷银行卡。
+    </p>
+</div>
+
+<!--支付方式结束-->
+
+<!--发票信息开始-->
+<div class="address comWidth">
+    <div class="adress_title">
+        <h3>发票信息</h3>
+    </div>
+    <p>
+        <input type="checkbox" id="invoice">
+        <label for="invoice">需要发票</label>
+    </p>
+    <p>
+        <b>*</b>
+        发票类型：
+        <select name="invice" id="invie" title="invice">
+            <option value="0">商业零售发票</option>
+            <option value="1">单核</option>
+            <option value="2">双核</option>
+            <option value="3">三核</option>
+            <option value="4">四核</option>
+            <option value="8">八核</option>
+        </select>
+    </p>
+    <p>
+        <b>*</b>
+        发票抬头：
+        <select name="invice" id="invie" title="invice">
+            <option value="0">个人</option>
+            <option value="1">单核</option>
+            <option value="2">双核</option>
+            <option value="3">三核</option>
+            <option value="4">四核</option>
+            <option value="8">八核</option>
+        </select>
+        <input type="text" placeholder="最多输入26个汉字" name="invice">
+    </p>
+    <p>
+        <input type="button" name="saved" value="保存">
+        <input type="button" name="cancel" value="取消">
+
+    </p>
+</div>
+<!--发票信息结束-->
+
+<!--送货清单开始-->
+<div class="address comWidth">
+    <div class="adress_title">
+        <h3>
+            送货清单
+            <span><a href="#">返回购物车修改</a></span>
+
+        </h3>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>商品名称</th>
+            <th>单价</th>
+            <th>返现</th>
+            <th>数量</th>
+            <th>小计</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >
+                    <img src="images/products/freezer.png" alt="freezer" >
+                    <p >
+
+                        <a href="#">
+                            Hisense 海信 BCD-202D 202升 三门冰箱（银色）
+                        </a>
+
+                    </p>
+
+
+                </td>
+                <td>
+                    ￥1459.00
+                </td>
+                <td>
+                    ￥0.00
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    ￥1459.00
+                </td>
+        </tr>
+            <tr>
+            <td>
+                <a href="#">
+                    [赠品] 保鲜盒 抽真空 保鲜盒 海信冰箱赠品
+                </a>
+            </td>
+            <td>
+            </td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+        </tr>
+        </tbody>
+
+    </table>
+    <p><a href="#">若您对包裹有特殊要求，请在此留言</a></p>
+    <p>
+        <i></i>
+        抱歉，以下商品暂时不能购买，已帮您自动在本次结算中剔除并扣减相对应金额。
+    </p>
+    <div class="no_product">
+        <img src="images/products/no_product.png" alt="no_product">
+        <div >
+            <p><a href="#">清风系列 清香型抽纸 100抽3……</a></p>
+            <p>数量：1件</p>
+            <p>￥4.90    <span>(无货)</span> </p>
+        </div>
+    </div>
+</div>
+
+<!--送货清单结束-->
+
+<!--订单结算开始-->
+<div class="address comWidth">
+    <div class="adress_title">
+        <h3>
+            订单结算
+        </h3>
+        <div class="total r">
+            <p>总计：<span>￥1459.00</span></p>
+            <button type="button">提交订单</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+<!--订单结算结束-->
+
+<footer >
+
+    <p>
+        北京市公安局朝阳分局备案110105004167 | 增值电信业务经营许可证合字B2-20090004
+    </p>
+    <p>
+        网络文化经营许可证京网文[2012] 0405 -126号 | 营业执照：110105001308484
+    </p>
+    <img src="images/icon/copyright.png" alt="">
+    <img src="images/icon/copyright.png" alt="">
+    <img src="images/icon/copyright.png" alt="">
+    <img src="images/icon/copyright.png" alt="">
+</footer>
+</body>
+</html>
