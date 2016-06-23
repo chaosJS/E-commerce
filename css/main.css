@@ -17,10 +17,16 @@
 }
 
 .collect {
-    background: url(../images/icon/star.png) left center no-repeat;
     /*↑此处最好用css-sprite，避免重复请求*/
-    padding-left: 20px;
     font-weight: bold;
+}
+.collect b{
+    display: inline-block;
+    height: 13px;
+    background: url(../images/icon/icon.png)  no-repeat;
+    background-position: 0 2px;
+    /*↑此处最好用css-sprite，避免重复请求*/
+    padding-left: 13px;
 }
 
 /*logo搜索框购物车样式开始*/
@@ -73,7 +79,8 @@
     width: 87px;
     border-right: 1px solid #e27a00;
 
-    background: url("../images/icon/cart.png") 5px center no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position: 5px -20px;
     text-indent: 35px;
 }
 
@@ -82,7 +89,8 @@
     height: 35px;
     color: #fff;
     border-left: 1px solid #e27a00;
-    background: url("../images/icon/caret.png") 24px center no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position: 25px -52px;
     text-indent: 12px;
 }
 
@@ -117,7 +125,8 @@
     display: inline-block;
     width: 13px;
     height: 7px;
-    background: url("../images/icon/down.png") left center no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:-18px 0;
     margin-left: 10px;
 }
 
@@ -320,7 +329,8 @@
     width: 44px;
     height: 44px;
     display: inline-block;
-    background: url("../images/icon/shopIcon.png") left top no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:0 -95px;
     float: left;
 
 }
@@ -469,9 +479,10 @@ footer img {
 
 .products_detail > p > span {
     display: inline-block;
-    padding-left: 60px;
+    padding-left: 12px;
     height: 13px;
-    background: url("../images/icon/star.png") left center repeat;
+    background-image: url("../images/icon/icon.png");
+    background-position:0 0;
 }
 
 .all_products > h2 {
@@ -593,7 +604,8 @@ footer img {
 
 .show_products_single form button i {
     padding-left: 15px;
-    background: url("../images/icon/bcart.png") left top no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:-35px 2px;;
 }
 
 .show_products_single a:last-child {
@@ -714,8 +726,9 @@ footer img {
 }
 
 .product_info ul > li > i {
-    padding-left: 55PX;
-    background: url("../images/icon/yellow_left.png") left top no-repeat;
+    padding-left: 57PX;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:0 -155px;
     margin-right: 10px;
 }
 
@@ -810,7 +823,8 @@ footer img {
 
 .product_info .btn_buy button i {
     padding-left: 30px;
-    background: url("../images/icon/cart.png") left top no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:0px -30px;
 }
 
 /*right_intro图片右侧结束*/
@@ -1023,7 +1037,8 @@ footer img {
 
 .clearb button > i {
     padding-left: 13px;
-    background: url("../images/icon/bdown.png") left top no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:-55px 0;
 }
 
 .clearb > img {
@@ -1055,10 +1070,11 @@ footer img {
 .comment .about_comments p:first-child i {
     display: inline-block;
     height: 13px;
-    padding-left: 60px;
+    padding-left: 13px;
     margin-right: 3px;
 
-    background: url("../images/icon/star.png") left top;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:0 0;
 }
 
 .comment .about_comments p:last-child a {
@@ -1297,7 +1313,8 @@ footer img {
 .address table + p + p i {
     padding-left: 15px;
     margin-right: 5px;
-    background: url("../images/icon/exclamation_point.png") left top no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:-72px 4px;
 }
 
 .address table + p + p {
@@ -1373,11 +1390,13 @@ footer img {
     height: 35px;
     border: 1px solid #ccc;
     padding: 5px 10px;
-    background: url("../images/icon/ruser.png") right center no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:305px -175px;
 }
 .login div input[type="password"]{
 
-    background: url("../images/icon/rpwd.png") right center no-repeat;
+    background: url("../images/icon/icon.png")  no-repeat;
+    background-position:305px -208px;
 }
 .login>input[type="button"]{
     width: 115px;
@@ -1421,5 +1440,10 @@ color: #ff0000;
 }
 /*登录注册页结束*/
 
+/*
+    @chaos_JS
+    2016年6月23日15:00:14
+    所有静态页面基本完成
+*/
 
 
